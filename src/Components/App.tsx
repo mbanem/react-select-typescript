@@ -16,20 +16,13 @@ export const App: React.FC<IData> = (data: IData): JSX.Element => {
 		sort: '',
 	});
 	return (
-		<div className='grid-container'>
-			<header>
-				<a href='/'> React Shopping Cart </a>
-			</header>
-			<main>
-				<div className='content'>
-					<div className='main'>
-						<Filter count={state.products.length} />
-						<Products {...state.products} />
-					</div>
-					<div className='sidebar'>Cart Items</div>
-				</div>
-			</main>
-			<footer>All rights reserved.</footer>
-		</div>
+		<>
+			<div className='flex-cont'>
+				<div>{state.products.length} Products</div>
+				<Filter count={state.products.length} />
+			</div>
+			<Products {...state.products} />
+			<div className='sidebar'>Cart Items</div>
+		</>
 	);
 };

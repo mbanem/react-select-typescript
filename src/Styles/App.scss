@@ -13,7 +13,7 @@ a:hover {
 .grid-container {
     display: grid;
     grid-template-areas: "header" "main" "footer"; // stack vertically;  order is important
-    grid-template-rows: 5rem 1fr 5rem;
+    grid-template-rows: 5rem 1fr 3rem;
     grid-template-columns: 1fr;
     height: 100vh;
     & div {
@@ -24,11 +24,11 @@ a:hover {
 
 header {
     grid-area: header; // not necessary, just info
-    background-color: #203040;
-    color: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #203040;
+    color: #ffffff;
     padding: 0.5rem;
     a {
         color: #ffffff;
@@ -60,8 +60,14 @@ footer {
 .main {
     display: flex;
     width: 65vw;
+    gap: 5px;
     padding: 2px 1rem;
     // background-color: yellow;
+}
+
+.flex-cont {
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .sidebar {
@@ -71,4 +77,11 @@ footer {
     // color: white;
     // padding: 2px 1rem;
     // background-color: royalblue;
+}
+
+.square {
+    width: 10rem;
+    height: 10rem;
+    margin: 5px;
+    background-color: yellow;
 }
