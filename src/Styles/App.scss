@@ -1,0 +1,74 @@
+:root {
+    --height-sidebar: calc(100vh - 10rem);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: orange;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: "header" "main" "footer"; // stack vertically;  order is important
+    grid-template-rows: 5rem 1fr 5rem;
+    grid-template-columns: 1fr;
+    height: 100vh;
+    & div {
+        display: inline-block;
+        // margin-left: 5px;
+    }
+}
+
+header {
+    grid-area: header; // not necessary, just info
+    background-color: #203040;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+    a:hover {
+        color: orange;
+    }
+}
+
+main {
+    grid-area: main; // not necessary
+}
+
+footer {
+    grid-area: footer; // not necessary
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #203040;
+    color: #ffffff;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main {
+    display: flex;
+    width: 65vw;
+    padding: 2px 1rem;
+    // background-color: yellow;
+}
+
+.sidebar {
+    flex: 1 20rem;
+    // display: flex;
+    // width: 27.3vw;
+    // color: white;
+    // padding: 2px 1rem;
+    // background-color: royalblue;
+}
