@@ -4,7 +4,6 @@ import Select from 'react-select';
 // import makeAnimated from 'react-select/animated';
 import { optionsOrder } from '../Models/options';
 import { customStyles } from '../Utils/CustomStyles';
-import '../Styles/styles.scss';
 // const SelectSizeComponents = makeAnimated();
 
 export const SelectOrder: React.FC = (): JSX.Element => {

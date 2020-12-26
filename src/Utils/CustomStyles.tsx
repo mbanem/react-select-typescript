@@ -7,7 +7,6 @@ export const customStyles = {
 	// un-open control w/o chevron
 	control: (base: any) => ({
 		...base,
-		// width: 250,
 		backgroundColor: 'aliceblue',
 	}),
 	// holds only placeholder message but not selected value

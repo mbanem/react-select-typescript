@@ -1,4 +1,3 @@
-// Feature 1
 import React, { useState } from 'react';
 import { IData, IProduct } from '../Models/Interfaces/Interfaces';
 import { Products } from './Products';

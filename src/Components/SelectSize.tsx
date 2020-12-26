@@ -6,7 +6,6 @@ import Select from 'react-select';
 // import makeAnimated from 'react-select/animated';
 import { optionsSize } from '../Models/options';
 import { customStyles } from '../Utils/CustomStyles';
-import '../Styles/styles.scss';
 
 // const SelectSizeComponents = makeAnimated();
 // interface IOptionsSize{
@@ -35,7 +34,7 @@ export const SelectSize: React.FC = (): JSX.Element => {
 		<>
 			<Select
 				isClearable
-				className='select-order-box'
+				className='select-size-box'
 				// closeMenuOnSelect={true}
 				// components={SelectSizeComponents}
 				// defaultValue={[colourOptions[4], colourOptions[5]]}
