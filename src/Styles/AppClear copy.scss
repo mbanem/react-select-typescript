@@ -70,7 +70,9 @@ footer {
 }
 
 .sidebar {
-    flex: 1 20rem;
+    flex: ;
+    flex-wrap: wrap;
+    width: 20rem;
     // align-items: stretch;
     background-color: rgb(149, 189, 224);
 }

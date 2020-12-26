@@ -7,8 +7,12 @@ import '../Styles/Filter.scss';
 export const Filter: React.FC<{ count: number }> = ({ count }): JSX.Element => {
 	return (
 		<>
-			<SelectOrder />
-			<SelectSize />
+			<div className='select-box'>
+				<SelectOrder />
+			</div>
+			<div className='select-box'>
+				<SelectSize />
+			</div>
 		</>
 	);
 };
