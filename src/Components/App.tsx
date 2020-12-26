@@ -38,10 +38,12 @@ export const App: React.FC<IData> = (data: IData): JSX.Element => {
 			});
 		}
 	};
+
 	const onSelectOrderBy = (value: ValueType<IOption, false>) => {
+		// console.log('onSelectOrderBy value', value);
 		const orderBy = value?.value || '';
 		console.log('onSelectOrderBy orderBy', orderBy);
-		const prods = data.products.slice().sort((a, b) => {
+		const prods = data.products.sort((a, b) => {
 			return orderBy === 'lowest'
 				? a.price < b.price
 					? -1
@@ -54,7 +56,7 @@ export const App: React.FC<IData> = (data: IData): JSX.Element => {
 				? -1
 				: 1;
 		});
-		// console.log('sorted prods', prods);
+
 		setState({
 			...state,
 			orderBy,
