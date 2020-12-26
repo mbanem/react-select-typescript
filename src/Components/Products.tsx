@@ -6,7 +6,7 @@ import '../Styles/Products.scss';
 
 export const Products: React.FC<IProduct[]> = (products): JSX.Element => {
 	const arr: [string, IProduct][] = Object.entries(products);
-	console.log('products', products);
+	// console.log('products', products);
 
 	return (
 		<div>
