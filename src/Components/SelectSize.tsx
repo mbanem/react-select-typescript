@@ -6,14 +6,14 @@ import Select from 'react-select';
 // import makeAnimated from 'react-select/animated';
 import { optionsSize } from '../Models/options';
 import { customStyles } from '../Utils/CustomStyles';
-
+import { ISizeProps } from './Filter';
 // const SelectSizeComponents = makeAnimated();
 // interface IOptionsSize{
 //   label: string;
 //   value: string;
 // }
 // export const SelectSize: React.FC<IOptionsSize[]> = (options): JSX.Element => {
-export const SelectSize: React.FC = (): JSX.Element => {
+export const SelectSize: React.FC<ISizeProps> = (props): JSX.Element => {
 	// const [state, setState] = React.useState({ isMulti: false });
 	// const [color, setColor] = React.useState<{
 	// 	backGround: string;
@@ -35,6 +35,7 @@ export const SelectSize: React.FC = (): JSX.Element => {
 			<Select
 				isClearable
 				className='select-size-box'
+				onChange={props.onSelectSize}
 				// closeMenuOnSelect={true}
 				// components={SelectSizeComponents}
 				// defaultValue={[colourOptions[4], colourOptions[5]]}

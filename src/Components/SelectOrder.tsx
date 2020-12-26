@@ -2,11 +2,12 @@ import React from 'react';
 
 import Select from 'react-select';
 // import makeAnimated from 'react-select/animated';
-import { optionsOrder } from '../Models/options';
+import { optionsOrderBy } from '../Models/options';
 import { customStyles } from '../Utils/CustomStyles';
+import { IOrderByProps } from './Filter';
 // const SelectSizeComponents = makeAnimated();
 
-export const SelectOrder: React.FC = (): JSX.Element => {
+export const SelectOrder: React.FC<IOrderByProps> = (props): JSX.Element => {
 	customStyles;
 
 	return (
@@ -14,11 +15,12 @@ export const SelectOrder: React.FC = (): JSX.Element => {
 			<Select
 				isClearable
 				className='select-order-box'
+				onChange={props.onSelectOrderBy}
 				// closeMenuOnSelect={true}
 				// components={SelectSizeComponents}
 				// defaultValue={[colourOptions[4], colourOptions[5]]}
 				// isMulti={state.isMulti}
-				options={optionsOrder}
+				options={optionsOrderBy}
 				styles={customStyles}
 				placeholder='How to Sort'
 			/>

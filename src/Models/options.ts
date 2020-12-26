@@ -3,11 +3,6 @@ export interface IOption {
 	value: string;
 	label: string;
 }
-export const optionsSort = [
-	{ label: 'Lowest', value: 'lowest' },
-	{ label: 'Highest', value: 'highest' },
-	{ label: 'Latest', value: 'latest' },
-];
 export const optionsSize = [
 	{ value: 'XS', label: 'XS Extra Small' },
 	{ value: 'S', label: 'S Small' },
@@ -16,10 +11,10 @@ export const optionsSize = [
 	{ value: 'XL', label: 'XL Extra Large' },
 	{ value: 'XXL', label: 'XXL Extra-Extra Large' },
 ];
-export const optionsOrder = [
+export const optionsOrderBy = [
 	{ value: 'latest', label: 'Latest' },
 	{ value: 'lowest', label: 'Lowest' },
-	{ value: 'Highest', label: 'Highest' },
+	{ value: 'highest', label: 'Highest' },
 ];
 
 export const colourOptions = [
