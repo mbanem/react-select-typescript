@@ -52,7 +52,7 @@ export const App: React.FC<IData> = (data: IData): JSX.Element => {
 				? a.price > b.price
 					? -1
 					: 1
-				: a.id < b.id
+				: a.id > b.id
 				? -1
 				: 1;
 		});
@@ -87,6 +87,7 @@ export const App: React.FC<IData> = (data: IData): JSX.Element => {
 					{state.products.length} Products
 				</div>
 				<Filter {...filterProps} />
+				<div className='cart-items-number'>Cart is empty</div>
 			</div>
 			<div className='main-sidebar'>
 				<Products {...state.products} />

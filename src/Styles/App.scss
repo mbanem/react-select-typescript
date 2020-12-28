@@ -64,8 +64,13 @@ a:hover {
 .number-of-products {
     display: block;
     width: 25rem;
-    padding-left: 6rem;
+    padding-left: 3rem;
     font-weight: bold;
+}
+
+.cart-items-number {
+    display: inline-block;
+    padding-left: 8rem;
 }
 
 .main-sidebar {
