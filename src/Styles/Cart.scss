@@ -1,0 +1,59 @@
+/* why the first line is indented? */
+
+.cart {
+    padding: 0;
+    margin: 0;
+    // display: flex;
+    // flex-wrap: wrap;
+}
+
+.cart-items {
+    padding: 0;
+    width: 100%;
+    list-style-type: none;
+    img {
+        width: 5rem;
+    }
+    li {
+        display: flex;
+        height: 7rem;
+        // border: 1px solid gray;
+        margin-bottom: 1rem;
+        div {
+            padding: 0 0 0 1rem;
+        }
+    }
+}
+
+.cart-item-title {
+    color: navy;
+}
+
+.quantity-button {
+    display: inline-block;
+    width: 1.7rem;
+    height: 2.3rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+    line-height: 23px;
+    font-size: 2rem;
+    &:hover {
+        background-color: rgb(238, 219, 143);
+        cursor: pointer;
+    }
+    &:last-of-type {
+        margin-left: 5px;
+    }
+    // .input-quantity::before {
+    //     content: '+';
+    //     position: absolute;
+    //     top: -1.3rem;
+    //     left: 5rem;
+    //     font-size: 24px;
+    //     font-weight: bold;
+    //     padding: 3px6px;
+    //     border: 1px solid gray;
+    //     border-radius: 3px;
+    //     z-index: 5;
+    // }
+}
