@@ -1,13 +1,8 @@
 import React from 'react';
-import { ICart, ICartItem } from './App';
-import { IProduct } from '../Models/Interfaces/Interfaces';
-import '../Styles/Cart.scss';
+import { ICartItem, ICartProps } from '../Models/Interfaces/Interfaces';
 import { formatCurrency } from '../Utils/FormatCurrency';
+import '../Styles/Cart.scss';
 
-export interface ICartProps {
-	cart: ICart;
-	handleQuantity: (item: ICartItem, quantity: number) => void;
-}
 type handleQuantity = (item: ICartItem, delta: number) => void;
 export const Cart: React.FC<ICartProps> = ({
 	cart,
