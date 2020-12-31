@@ -1,18 +1,13 @@
 // @flow
 
+import { ISizeProps } from './Filter';
 import React from 'react';
-
 import Select from 'react-select';
+import { customStyles } from '../Utils/CustomStyles';
 // import makeAnimated from 'react-select/animated';
 import { optionsSize } from '../Models/options';
-import { customStyles } from '../Utils/CustomStyles';
-import { ISizeProps } from './Filter';
-// const SelectSizeComponents = makeAnimated();
-// interface IOptionsSize{
-//   label: string;
-//   value: string;
-// }
-// export const SelectSize: React.FC<IOptionsSize[]> = (options): JSX.Element => {
+
+// NOTE: commented out is toggle multi - single r multiple select component
 export const SelectSize: React.FC<ISizeProps> = (props): JSX.Element => {
 	// const [state, setState] = React.useState({ isMulti: false });
 	// const [color, setColor] = React.useState<{
