@@ -1,12 +1,15 @@
-import React from 'react';
-import { IProduct } from '../Models/Interfaces/Interfaces';
-import { formatCurrency } from '../Utils/FormatCurrency';
 import '../Styles/App.scss';
 import '../Styles/Products.scss';
 
-export const Products: React.FC<IProduct[]> = (products): JSX.Element => {
+import { IProduct, IProductProps } from '../Models/Interfaces/Interfaces';
+
+import React from 'react';
+import { formatCurrency } from '../Utils/FormatCurrency';
+
+export const Products: React.FC<IProductProps> = ({
+	props: { products, addToCart },
+}): JSX.Element => {
 	const arr: [string, IProduct][] = Object.entries(products);
-	console.log('products', products);
 
 	return (
 		<div>
@@ -26,7 +29,12 @@ export const Products: React.FC<IProduct[]> = (products): JSX.Element => {
 								</a>
 								<div className='product-price'>
 									<div>{formatCurrency(product.price)}</div>
-									<button className='button-primary'>Add to Cart</button>
+									<button
+										onClick={() => addToCart(product)}
+										className='button-primary'
+									>
+										Add to Cart
+									</button>
 								</div>
 							</div>
 						</li>

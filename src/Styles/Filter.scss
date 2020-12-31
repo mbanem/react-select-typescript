@@ -2,29 +2,19 @@
     --height-sidebar: calc(100vh - 10rem);
 }
 
-.select-order-box,
+.select-order-box {
+    display: inline-block;
+    width: 18rem;
+}
+
 .select-size-box {
-    display: inline-block !important;
-    width: 28rem;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-areas: "header" "main" "footer"; // stack vertically;  order is important
-    grid-template-rows: 5rem 1fr 5rem;
-    grid-template-columns: 1fr;
-    height: 100vh;
-}
-
-.filter-result {
-    margin-left: 2rem;
+    display: inline-block;
+    width: 27.4rem;
 }
 
 .sidebar {
     flex: 1 20rem;
     border-left: 1px solid gray;
-    // align-items: stretch;
-    // background-color: rgb(149, 189, 224);
 }
 
 .label {

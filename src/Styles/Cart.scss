@@ -3,8 +3,6 @@
 .cart {
     padding: 0;
     margin: 0;
-    // display: flex;
-    // flex-wrap: wrap;
 }
 
 .cart-items {
@@ -44,16 +42,4 @@
     &:last-of-type {
         margin-left: 5px;
     }
-    // .input-quantity::before {
-    //     content: '+';
-    //     position: absolute;
-    //     top: -1.3rem;
-    //     left: 5rem;
-    //     font-size: 24px;
-    //     font-weight: bold;
-    //     padding: 3px6px;
-    //     border: 1px solid gray;
-    //     border-radius: 3px;
-    //     z-index: 5;
-    // }
 }
