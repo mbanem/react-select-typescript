@@ -1,7 +1,8 @@
-import React from 'react';
-import { ICart, ICartItem } from './App';
-import { IProduct } from '../Models/Interfaces/Interfaces';
 import '../Styles/Cart.scss';
+
+import { ICart, ICartItem } from '../Models/Interfaces/Interfaces';
+
+import React from 'react';
 import { formatCurrency } from '../Utils/FormatCurrency';
 
 export interface ICartProps {

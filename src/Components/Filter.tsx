@@ -1,10 +1,11 @@
+import '../Styles/Filter.scss';
+
+import { IOption } from '../Models/options';
 import React from 'react';
 import { SelectOrder } from './SelectOrder';
 import { SelectSize } from './SelectSize';
-
 import { ValueType } from 'react-select';
-import { IOption } from '../Models/options';
-import '../Styles/Filter.scss';
+
 export interface ISizeProps {
 	size: string;
 	onSelectSize: (value: ValueType<IOption, false>) => void;

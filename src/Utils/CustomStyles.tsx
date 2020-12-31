@@ -1,3 +1,6 @@
+// NOTE: width is defined directly in Components
+// SelectSize and SelectOrder with classes
+// select-size-box and select-order-box
 export const customStyles = {
 	menuList: (base: any) => ({
 		...base,
@@ -15,7 +18,7 @@ export const customStyles = {
 		fontSize: 17,
 		// fontStyle: 'italic',
 		width: 180,
-		padding: '0 1rem',
+		padding: '0 0.5rem',
 		color: '#34348f',
 	}),
 };
