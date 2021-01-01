@@ -12,7 +12,7 @@ export const formatCurrency = (num: number) => {
 };
 
 export const cartTotal: React.FC<number> = (num: number): JSX.Element => {
-	if (num === 0) {
+	if (num <= 0) {
 		return <div>&nbsp;</div>;
 	}
 	const total = formatCurrency(num);
