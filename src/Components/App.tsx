@@ -8,12 +8,12 @@ import {
 	IState,
 } from '../Models/Interfaces/Interfaces';
 import React, { useState } from 'react';
+import { cartTotal, formatCurrency } from '../Utils/FormatCurrency';
 
 import { Cart } from './Cart';
 import { IOption } from '../Models/options';
 import { Products } from './Products';
 import { ValueType } from 'react-select';
-import { formatCurrency } from '../Utils/FormatCurrency';
 import { proceed } from '../Utils/Payment';
 
 export const App: React.FC<IData> = (data: IData): JSX.Element => {
@@ -156,7 +156,7 @@ export const App: React.FC<IData> = (data: IData): JSX.Element => {
 				<div className='total'>
 					<div style={{ textAlign: 'right' }}>
 						<span>{number}</span>
-						<div>Total {formatCurrency(state.cart.total)}</div>
+						<div>{cartTotal(state.cart.total)}</div>
 					</div>
 					<div style={{ width: '10.5rem' }}>{buttonProceed}</div>
 				</div>
