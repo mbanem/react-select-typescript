@@ -51,7 +51,7 @@ export const App: React.FC<IData> = (data: IData): JSX.Element => {
 		setState({ ...state, cart });
 	};
 	const [state, setState] = useState<IState>({
-		products: data.products,
+		products: data.products.sort((a, b) => (a.id > b.id ? -1 : 1)),
 		cart: { items: [], numberOfModels: 0, numberOfItems: 0, total: 0 },
 		size: '',
 		orderBy: '',
